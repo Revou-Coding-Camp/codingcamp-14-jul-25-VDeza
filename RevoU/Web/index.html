@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU_Deza</title>
+    
+</head>
+<body>
+    
+    <header id="header">
+        <img id="icon" src="/RevoU/Images/pancasila.jpg">
+        <nav>
+            <a class="navbar" href="#home" onclick="event.preventDefault">Home</a>
+            <a class="navbar" href="#profile" onclick="event.preventDefault">Our Profile</a>
+            <a class="navbar" href="#message" onclick="event.preventDefault">Message Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+        <header>
+            <h1 id="welcome"></h1>
+        </header>
+        <article id="welcomee">
+            <p>This is my first website</p>
+        </article>
+        </section>
+        <div>
+            <div id="banner"></div>
+
+        <hr>
+
+        <section id="profile">
+            <header>
+                <h1>Profil</h1>
+                <img id="profilpic" src="/RevoU/Images/ganteng.jpeg">
+            </header>
+            <div id="bio">
+                <p>Nama   : Muhammad Veren Deza Putra</p>
+                 <br>
+                <p>Gender : Laki-laki</p>
+                 <br>
+                <p>Umur   :   18 tahun</p>
+                 <br>
+                <p>Hobby    : Menggambar, berenang, main game</p>
+                 <br>
+                <p>Alamat   : Tangerang, Banten</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section id="message">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            <div id="input">
+                <form>
+                    <div class="form-row">
+                     <label>Nama :</label>
+                     <input id="inputn" type="text" placeholder="masukkan nama ..." required>
+                    </div>
+
+                     <br>
+
+                     <div class="form-row">
+                     <label>Tanggal Lahir :</label>
+                     <input id="inputtl" type="date" required>
+                    </div>
+
+                     <br>
+
+                     <div class="form-row">
+                     <label>Jenis Kelamin :</label>
+                     <input id="inputjk" type="radio" value="Laki-laki" name="gender" required>Laki-laki
+                     <input id="inputjk" type="radio" value="Perempuan" name="gender">Perempuan
+                     </div>
+                     
+                     <br>
+
+                     <div class="form-row">
+                     <label>Pesan :</label>
+                    </div>
+                     <div class="form-row">
+                     <textarea id="inputp" placeholder="Silahkan ketik pesan ..." rows="5" cols="39"></textarea>
+                    </div>
+
+                     <br>
+
+                     <button id="send" onclick="input()" type="button">send</button>
+                </form>
+                <div id="result">
+                    <h4>Result</h4>
+                    <div id="output"></div>
+                </div>
+                </div>
+        </section>
+        
+    </main>
+    <footer></footer>
+<script src="script.js"></script>
+</body>
+</html>
